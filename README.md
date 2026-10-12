@@ -1,8 +1,8 @@
 <!-- regenerate: on (set to off if you edit this file) -->
 
-# Embedded Alternate Certificates
+# Embedded Alternate Issuers
 
-This is the working area for the individual Internet-Draft, "Embedded Alternate Certificates".
+This is the working area for the individual Internet-Draft, "Embedded Alternate Issuers".
 
 * [Editor's Copy](https://davidben.github.io/turducken-certs/#go.draft-davidben-lamps-turducken-certs.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-davidben-lamps-turducken-certs)
@@ -13,7 +13,7 @@ This is the working area for the individual Internet-Draft, "Embedded Alternate 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/davidben/turducken-certs/blob//CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/davidben/turducken-certs/blob/main/CONTRIBUTING.md).
 
 The contributing file also has tips on how to make contributions, if you
 don't already know how to do that.

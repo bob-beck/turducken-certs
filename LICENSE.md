@@ -1,4 +1,4 @@
 # License
 
 See the
-[guidelines for contributions](https://github.com/davidben/turducken-certs/blob//CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/davidben/turducken-certs/blob/main/CONTRIBUTING.md).
