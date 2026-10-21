@@ -124,7 +124,7 @@ func extractAlternateCertificates(outer *x509.Certificate) ([]*x509.Certificate,
 		if foundAltInfoList {
 			return nil, errors.New("duplicate AlternateIssuerInfoList SCT")
 		}
-		if timestamp != 0 || !extensions.Empty() || hashAlg != 0 || sigAlg != 0 {
+		if timestamp != 0 || !extensions.Empty() || hashAlg != 4 || sigAlg != 3 {
 			return nil, errors.New("invalid AlternateIssuerInfoList SCT")
 		}
 		altInfoList = signature

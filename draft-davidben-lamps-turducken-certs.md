@@ -333,7 +333,7 @@ The extension MUST contain a Signed Certificate Timestamp (SCT) ({{Section 3.2 o
 * The `id` field MUST be the 32-byte string represented in hexadecimal as `abdcf1b6ca6af3c91f37f54fbafdbd17e711780d5197d15d0e1e71106d8cb6c5`. This is the SHA-256 {{!SHS=DOI.10.6028/NIST.FIPS.180-4}} hash of the ASCII string "Embedded Alternate Issuers".
 * The `timestamp` field MUST be zero.
 * The `extensions` field MUST be the empty string.
-* The `algorithm` field of the digitally-signed element ({{Section 4.7 of !RFC5246}}) MUST have a `hash` of `none` (zero) and a `signature` of `anonymous` (zero). ({{!RFC5246}} was obsoleted by {{?RFC8446}} but the SignedCertificateTimestamp structure relies on definitions from {{!RFC5246}}.)
+* The `algorithm` field of the digitally-signed element ({{Section 4.7 of !RFC5246}}) MUST have a `hash` of `sha256` (4) and a `signature` of `ecdsa` (3). These values do not describe the `signature` field. They are chosen so that existing SCT parsers, some of which reject an entire SCT list on encountering an unsupported algorithm, accept this SCT as an SCT from an unknown log and continue to process any other SCTs in the list.
 * The `signature` field of the digitally-signed element MUST contain a DER-encoded AlternateIssuerInfoList structure, with one AlternateIssuerInfo per alternate certificate.
 
 The `id-ce-embeddedSCT-CTv1` extension MAY contain other SCTs, for example, if the outer certificate itself participates in Certificate Transparency.
